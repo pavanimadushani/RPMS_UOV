@@ -1,0 +1,77 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    transition: 0.3s;
+}
+
+body {
+    background-image: url("./RESOURCES/18129294.jpg");
+    background-position-y: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formIn input {
+    height: 1.5rem;
+    width: 30rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+.formIn textarea {
+    width: 30rem;
+    margin-bottom: 10px;
+    height: 5rem;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.formIn .btnSC {
+    background-color: #2ae600;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 142, 3, 0.588); /* bluish color with opacity */
+    backdrop-filter: blur(10px); /* blur effect */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* shadow effect */
+    border-radius: 10px;
+    color: aliceblue;
+    height: 3rem;
+    text-shadow: 0 0 8px black;
+}
+
+.btdb {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+h1 {
+    padding: 10px 0;
+}

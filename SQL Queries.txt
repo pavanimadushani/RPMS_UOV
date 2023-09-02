@@ -1,0 +1,61 @@
+// Databaase Table Structure
+
+#studentDetails
+st_ID -> primary_key , auto increment
+st_NameWithInitials
+st_regNo
+st_email
+st_contactNo
+st_password
+
+
+
+#researchProjects
+rp_ID -> primary_key , auto increment
+rp_studentID -> foreign_key from #studentDetails - st_ID
+rp_title
+rp_year
+rp_description
+rp_sources
+rp_projectLink
+rp_references
+rp_image	-> image
+
+
+#adminLogin	// For Future Admin Panel
+admin_ID -> primary_key , auto increment
+admin_username
+admin_password
+
+
+
+// Database Table Queries
+
+
+CREATE TABLE studentDetails (
+  st_ID INT PRIMARY KEY AUTO_INCREMENT,
+  st_NameWithInitials VARCHAR(255),
+  st_regNo VARCHAR(255) UNIQUE,
+  st_email VARCHAR(255),
+  st_contactNo VARCHAR(255),
+  st_password VARCHAR(255)
+);
+
+CREATE TABLE researchProjects (
+  rp_ID INT PRIMARY KEY AUTO_INCREMENT,
+  rp_studentID INT,
+  rp_title VARCHAR(255),
+  rp_description VARCHAR(255),
+  rp_sources VARCHAR(255),
+  rp_projectLink VARCHAR(255),
+  rp_references VARCHAR(255),
+  rp_image LONGBLOB,
+  FOREIGN KEY (rp_studentID) REFERENCES studentDetails(st_ID)
+);
+
+
+CREATE TABLE adminLogin ( 			// For Future Admin Panel
+  admin_ID INT PRIMARY KEY AUTO_INCREMENT,
+  admin_username VARCHAR(255),
+  admin_password VARCHAR(255)
+);
