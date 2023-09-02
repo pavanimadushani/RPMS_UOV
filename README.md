@@ -38,7 +38,7 @@ Follow these steps to get the project up and running on your local machine:
 1. Clone this repository: `git clone https://github.com/pavanimadushani/RPMS_UOV.git`
 2. Set up your web server environment (e.g., XAMPP, WAMP, or a similar stack).
 3. Import the provided MySQL database.
-4. Configure the database connection in `config.php`.
+4. Configure the database connection in `database.php`.
 5. Open the project in your web browser.
 
 ## Website
